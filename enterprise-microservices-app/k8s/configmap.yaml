@@ -1,0 +1,13 @@
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: microservices
+data:
+  KAFKA_BROKER: "kafka:29092"
+
+  ORDER_CREATED_TOPIC: "order-created"
+  PAYMENT_COMPLETED_TOPIC: "payment-completed"
+  INVENTORY_UPDATED_TOPIC: "inventory-updated"
+  NOTIFICATION_DLQ_TOPIC: "notification-dlq"
